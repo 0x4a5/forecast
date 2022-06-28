@@ -5,6 +5,7 @@ import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import Forecast from "../components/Forecast";
 import Spinner from "../components/Spinner";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [city, setCity] = useState("");
@@ -67,6 +68,9 @@ export default function Home() {
         {/* Forecast Details */}
 
         {forecast.main && <Forecast data={forecast} />}
+
+            {/* Footer Code Bloc */}
+      <Footer />
       </div>
     );
   }

@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Forecast = ({data}) => {
     
   return (
-    <div className='relative flex flex-col justify-between m-w-[500px] w-full h-[90vh] m-auto p-4 text-gray-300 z-10'>
+    <div className='relative flex flex-col justify-between m-w-[500px] w-full h-[90vh] m-auto py-7 p-4 text-gray-300 z-10'>
     {/* Top Bloc */}
         <div className='relative flex justify-between pt-12'>
             <div className='flex flex-col items-center'>
@@ -21,7 +21,7 @@ const Forecast = ({data}) => {
         {/* Bottom Bloc */}
 
         <div className='bg-[#0A0A0A]/60 rounded-lg relative p-8'>
-            <p className='text-2xl text-center pb-6'>{data.name} daily forecast:</p>
+            <p className='text-2xl text-center pb-6'>{data.name}'s Daily Forecast:</p>
             <div className='flex justify-between text-center'>
                 <div>
                     <p className='font-bold text-2xl'>{data.main.feels_like.toFixed(0)}&#176;</p>
