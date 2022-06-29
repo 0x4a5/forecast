@@ -21,7 +21,7 @@ const Forecast = ({data}) => {
         {/* Bottom Bloc */}
 
         <div className='bg-[#0A0A0A]/60 rounded-lg relative p-8'>
-            <p className='text-2xl text-center pb-6'>{data.name}'s Daily Forecast:</p>
+            <p className='text-2xl text-center pb-6'>{data.name}&apos;s Daily Forecast:</p>
             <div className='flex justify-between text-center'>
                 <div>
                     <p className='font-bold text-2xl'>{data.main.feels_like.toFixed(0)}&#176;</p>
